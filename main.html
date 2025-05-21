@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+		function search() {
+			var input, filter, ul, li, a, i, txtValue;
+			input = document.getElementById("searchBar");
+			filter = input.value.toUpperCase();
+			ul = document.getElementById("navList");
+			li = ul.getElementsByTagName("li");
+			for (i = 0; i < li.length; i++) {
+				a = li[i].getElementsByTagName("a")[0];
+				txtValue = a.textContent || a.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					li[i].style.display = "";
+				} else {
+					li[i].style.display = "none";
+				}
+			}
+		}
+	</script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Ferris State E-Sports - About Us</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="assets.js/main.js"></script>
+</head>
+<body>
+	<div class="container">
+        <header>
+		<h1>Ferris State E-Sports - About Us</h1>
+        <nav>
+			<ul id="navList">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="caster.html">Caster</a></li>
+				<li><a href="facility.html">Facility</a></li>
+				<li><a href="discord.html">Discord</a></li>
+				<li><a href="building.html">Upcoming Building</a></li>
+                <li><a href="sponsorship%20and%20advertising.html">Sponsorships and Advertising</a></li>
+                <li><a href="playerprofile.html">Player Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="forum.html">Forums</a></li>
+                <li><a href="policy%20page.html">Policy</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact%20page.html">Contact Us</a></li>
+                <li><a href="main.html">About Us</a></li>
+					<a href="#">Games &#9662;</a>
+                <li>
+					<ul>
+						<div><li><a href="codpage.html">Call of Duty</a></li></div>
+						<div><li><a href="CSGOPAGE.html">CS:GO</a></li></div>
+						<div><li><a href="LEAGUEOFLEGENDSPAGE.html">League of Legends</a></li></div>
+						<div><li><a href="OVERWATCH2PAGE.html">Overwatch</a></li></div>
+						<div><li><a href="ROCKETLEAGUEPAGE.HTML">Rocket League</a></li></div>
+						<div><li><a href="VALORANTPAGE.html">Valorant</a></li></div>
+						<div><li><a href="MOREGAMESPAGE.html">More Games</a></li></div>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+        </header>
+
+   
+
+    <section id="hero">
+        <h2>Hero Section</h2>
+        <div class="hero-content">
+            <h3>Welcome to Rocket League!</h3>
+            <p>Test out your skills with the best of the best.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h3>About Us</h3>
+        <p>Welcome to our esports about page! We are a competitive gaming organization dedicated to promoting and advancing the esports industry.</p>
+        <p>Our team is made up of passionate gamers, coaches, and analysts who share a love for esports and a desire to push the limits of what is possible in the world of gaming.</p>
+        <p>Our organization believes in the power of esports to bring people together and create exciting experiences. We value teamwork, communication, and sportsmanship, and strive to embody these values in everything we do.</p>
+        <p>
+            Whether you're a seasoned pro or just getting started in the world of gaming, we welcome you to join us on our journey. Together, we can help to shape the future of esports and create a more inclusive and dynamic community for all.
+
+            At our core, we believe that e-sports represents the future of sports and entertainment. With millions of players and spectators around the world, e-sports has become a massive industry that continues to grow every year. We are committed to showcasing the best that this industry has to offer and providing a platform for players, teams, and fans to connect and engage with each other.
+
+            Our team of writers and analysts are passionate about e-sports and have a deep understanding of the games, players, and trends that are shaping the industry. We cover a wide range of games, including League of Legends, Dota 2, Overwatch, CS:GO, Fortnite, and many more. We also provide in-depth coverage of e-sports events, including major tournaments and championships.
+
+            Whether you are a seasoned e-sports fan or new to the world of competitive gaming, we invite you to explore our site and discover all that e-sports has to offer. Thank you for visiting our page, and we look forward to sharing the latest news and insights with you.
+
+            Sincerely,
+            The Rocket League Team.
+        </p>
+    </section>
+
+    <section id="services">
+        <h3>Our Services include:</h3>
+        <ul>
+            <li>Training and Coaching</li>
+            <li>Competitions and Tournaments</li>
+            <li>Community Building</li>
+            <li>Equipment and Facilities</li>
+            <li>Sponsorship</li>
+        </ul>
+    </section>
+
+    <section id="policy">
+        <h3>Privacy Policy</h3>
+        <p>At Rocket League, we value the privacy of our users and visitors. This Privacy Policy outlines the types of personal information that we collect, how it is used, and the measures we take to protect it.</p>
+        <p>We collect information such as names, email addresses, and usage data to improve our services and provide a better user experience. Your data is stored securely, and we do not share it with third parties without your consent.</p>
+        <p>For more details, please visit our <a href="privacy-policy.html">dedicated Privacy Policy page</a>.</p>
+</body> 
+</html>

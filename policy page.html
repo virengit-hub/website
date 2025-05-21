@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script>
+		function search() {
+			var input, filter, ul, li, a, i, txtValue;
+			input = document.getElementById("searchBar");
+			filter = input.value.toUpperCase();
+			ul = document.getElementById("navList");
+			li = ul.getElementsByTagName("li");
+			for (i = 0; i < li.length; i++) {
+				a = li[i].getElementsByTagName("a")[0];
+				txtValue = a.textContent || a.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					li[i].style.display = "";
+				} else {
+					li[i].style.display = "none";
+				}
+			}
+		}
+	</script>
+      <link rel="stylesheet" href="styles.css">
+    <title>Ferris State e-Sports Policy</title>
+    <link rel="stylesheet" type="text/css" href="policy page.css">
+      <header>
+          <h1>Policy</h1>
+     
+      <nav>
+			<ul id="navList">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="caster.html">Caster</a></li>
+				<li><a href="facility.html">Facility</a></li>
+				<li><a href="discord.html">Discord</a></li>
+				<li><a href="building.html">Upcoming Building</a></li>
+                <li><a href="sponsorship%20and%20advertising.html">Sponsorships and Advertising</a></li>
+                <li><a href="playerprofile.html">Player Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="forum.html">Forums</a></li>
+                <li><a href="policy%20page.html">Policy</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact%20page.html">Contact Us</a></li>
+                <li><a href="main.html">About Us</a></li>
+					<a href="#">Games &#9662;</a>
+                <li>
+					<ul>
+						<div><li><a href="codpage.html">Call of Duty</a></li></div>
+						<div><li><a href="CSGOPAGE.html">CS:GO</a></li></div>
+						<div><li><a href="LEAGUEOFLEGENDSPAGE.html">League of Legends</a></li></div>
+						<div><li><a href="OVERWATCH2PAGE.html">Overwatch</a></li></div>
+						<div><li><a href="ROCKETLEAGUEPAGE.HTML">Rocket League</a></li></div>
+						<div><li><a href="VALORANTPAGE.html">Valorant</a></li></div>
+						<div><li><a href="MOREGAMESPAGE.html">More Games</a></li></div>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+  </header>
+  <body>
+    
+    <h2>Code of Conduct</h2>
+    <p>
+      At Ferris State e-Sports, we expect all members to conduct themselves in a professional and respectful manner at all times. This includes but is not limited to the following:
+    </p>
+    <ul>
+      <li>Respecting the rights and dignity of all individuals</li>
+      <li>Avoiding discriminatory language or behavior</li>
+      <li>Avoiding any form of cheating or exploitation in games</li>
+      <li>Using appropriate language and behavior in team communications</li>
+      <li>Representing the organization in a positive manner at all times</li>
+    </ul>
+    <h2>Membership Requirements</h2>
+    <p>
+      To be a member of Ferris State e-Sports, you must meet the following requirements:
+    </p>
+    <ul>
+      <li>Be a current student at Ferris State University</li>
+      <li>Be in good academic standing with the university</li>
+      <li>Abide by the organization's code of conduct</li>
+      <li>Attend meetings and events as required by the organization</li>
+    </ul>
+    <h2>Disciplinary Action</h2>
+    <p>
+      Violation of the organization's code of conduct may result in disciplinary action, up to and including suspension or expulsion from the organization. All disciplinary action will be decided upon by the executive board and may be appealed to the general membership.
+    </p>
+  </body>
+</html>

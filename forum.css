@@ -1,0 +1,18 @@
+/* Reset styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Global styles */
+body {
+	font-family: Arial, sans-serif;
+	background-color: rgb(252, 186, 3);
+	color: #fff;
+}
+
+header {
+	background-color: rgba(235, 52, 52);
+	padding: 20px;
+	box-shadow

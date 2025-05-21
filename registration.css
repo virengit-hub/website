@@ -1,0 +1,84 @@
+/* Set default font and margin/padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style headings */
+  h1, h2 {
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  
+  /* Style paragraphs */
+  p {
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+  
+  /* Style form container */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(235, 52, 52);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style form fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  /* Style form labels */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  /* Style form checkbox and radio buttons */
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  /* Style form button */
+  button[type="submit"] {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Style error messages */
+  .error-message {
+    color: #f00;
+    margin-top: 5px;
+  }
+  
+  /* Style success message */
+  .success-message {
+    color: #008000;
+    margin-top: 5px;
+  }
+  

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ferris State E-Sports - Upcoming Building</title>
+	<link rel="stylesheet" href="styles.css">
+	<script>
+		function search() {
+			var input, filter, ul, li, a, i, txtValue;
+			input = document.getElementById("searchBar");
+			filter = input.value.toUpperCase();
+			ul = document.getElementById("navList");
+			li = ul.getElementsByTagName("li");
+			for (i = 0; i < li.length; i++) {
+				a = li[i].getElementsByTagName("a")[0];
+				txtValue = a.textContent || a.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					li[i].style.display = "";
+				} else {
+					li[i].style.display = "none";
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<form>
+			<input type="text" id="searchBar" onkeyup="search()" placeholder="Search...">
+		</form>
+		<nav>
+			<ul id="navList">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="caster.html">Caster</a></li>
+				<li><a href="facility.html">Facility</a></li>
+				<li><a href="discord.html">Discord</a></li>
+				<li><a href="building.html">Upcoming Building</a></li>
+                <li><a href="sponsorship%20and%20advertising.html">Sponsorships and Advertising</a></li>
+                <li><a href="playerprofile.html">Player Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="forum.html">Forums</a></li>
+                <li><a href="policy%20page.html">Policy</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact%20page.html">Contact Us</a></li>
+                <li><a href="main.html">About Us</a></li>
+					<a href="#">Games &#9662;</a>
+                <li>
+					<ul>
+						<div><li><a href="codpage.html">Call of Duty</a></li></div>
+						<div><li><a href="CSGOPAGE.html">CS:GO</a></li></div>
+						<div><li><a href="LEAGUEOFLEGENDSPAGE.html">League of Legends</a></li></div>
+						<div><li><a href="OVERWATCH2PAGE.html">Overwatch</a></li></div>
+						<div><li><a href="ROCKETLEAGUEPAGE.HTML">Rocket League</a></li></div>
+						<div><li><a href="VALORANTPAGE.html">Valorant</a></li></div>
+						<div><li><a href="MOREGAMESPAGE.html">More Games</a></li></div>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h1>Upcoming Building</h1>
+			<img src="cvl.jpg" height=400 width=946 style='border:5px solid #eb3434'>
+			<p>We're excited to announce that we'll be opening a new E-Sports facility on the Big Rapids campus!</p>
+			<ul>
+				<li>A dedicated room for practices and for our team to participate in tournaments from.</li>
+				<li>Multiple streaming booths equipped with high-quality cameras, microphones, and lighting</li>
+				<li>A snack bar offering a variety of food and beverages</li>
+			</ul>
+			<p>Stay tuned for more information about our upcoming building and its grand opening!</p>
+		</section>
+	</main>
+</body>
+</html>

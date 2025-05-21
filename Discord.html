@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ferris State E-Sports - Discord</title>
+	<link rel="stylesheet" href="styles.css">
+	<script>
+		function search() {
+			var input, filter, ul, li, a, i, txtValue;
+			input = document.getElementById("searchBar");
+			filter = input.value.toUpperCase();
+			ul = document.getElementById("navList");
+			li = ul.getElementsByTagName("li");
+			for (i = 0; i < li.length; i++) {
+				a = li[i].getElementsByTagName("a")[0];
+				txtValue = a.textContent || a.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					li[i].style.display = "";
+				} else {
+					li[i].style.display = "none";
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<form>
+			<input type="text" id="searchBar" onkeyup="search()" placeholder="Search...">
+		</form>
+		<nav>
+			<ul id="navList">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="caster.html">Caster</a></li>
+				<li><a href="facility.html">Facility</a></li>
+				<li><a href="discord.html">Discord</a></li>
+				<li><a href="building.html">Upcoming Building</a></li>
+				<li>
+					<a href="#">Games &#9662;</a>
+					<ul>
+						<div><li><a href="codpage.html">Call of Duty</a></li></div>
+						<div><li><a href="CSGOPAGE.html">CS:GO</a></li></div>
+						<div><li><a href="LEAGUEOFLEGENDSPAGE.html">League of Legends</a></li></div>
+						<div><li><a href="OVERWATCH2PAGE.html">Overwatch</a></li></div>
+						<div><li><a href="ROCKETLEAGUEPAGE.HTML">Rocket League</a></li></div>
+						<div><li><a href="VALORANTPAGE.html">Valorant</a></li></div>
+						<div><li><a href="MOREGAMESPAGE.html">More Games</a></li></div>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h1>Discord</h1>
+			<p>Welcome to the Ferris State E-Sports Discord server! Join our community to connect with other gamers, find teammates, and participate in events and tournaments.</p>
+			<p>Click the link below to join our Discord server:</p>
+			<img width=200 height=200 src="discordlogo.webp" alt="Discord Logo">
+			<div>
+			<a href="https://discord.com/invite/rn8SfN5">Join our Discord server</a>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

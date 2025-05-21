@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+		function search() {
+			var input, filter, ul, li, a, i, txtValue;
+			input = document.getElementById("searchBar");
+			filter = input.value.toUpperCase();
+			ul = document.getElementById("navList");
+			li = ul.getElementsByTagName("li");
+			for (i = 0; i < li.length; i++) {
+				a = li[i].getElementsByTagName("a")[0];
+				txtValue = a.textContent || a.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					li[i].style.display = "";
+				} else {
+					li[i].style.display = "none";
+				}
+			}
+		}
+	</script>
+	<link rel="stylesheet" href="styles.css">
+ <title>    Other games</title>
+    <header>
+ <h1> More games </h1>
+ <form>
+			<input type="text" id="searchBar" onkeyup="search()" placeholder="Search...">
+		</form>
+		<nav>
+			<ul id="navList">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="caster.html">Caster</a></li>
+				<li><a href="facility.html">Facility</a></li>
+				<li><a href="discord.html">Discord</a></li>
+				<li><a href="building.html">Upcoming Building</a></li>
+                <li><a href="sponsorship%20and%20advertising.html">Sponsorships and Advertising</a></li>
+                <li><a href="playerprofile.html">Player Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="forum.html">Forums</a></li>
+                <li><a href="policy%20page.html">Policy</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact%20page.html">Contact Us</a></li>
+                <li><a href="main.html">About Us</a></li>
+					<a href="#">Games &#9662;</a>
+                <li>
+					<ul>
+						<div><li><a href="codpage.html">Call of Duty</a></li></div>
+						<div><li><a href="CSGOPAGE.html">CS:GO</a></li></div>
+						<div><li><a href="LEAGUEOFLEGENDSPAGE.html">League of Legends</a></li></div>
+						<div><li><a href="OVERWATCH2PAGE.html">Overwatch</a></li></div>
+						<div><li><a href="ROCKETLEAGUEPAGE.HTML">Rocket League</a></li></div>
+						<div><li><a href="VALORANTPAGE.html">Valorant</a></li></div>
+						<div><li><a href="MOREGAMESPAGE.html">More Games</a></li></div>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+    </header>
+ <img src="DOTASIEGEPIC.jpg" alt="Dota 2" align="right">
+<h2>About the other games</h2>
+    <p>Ferris State offers many other games just some don't have the players to make a team</p>
+    <p><b>Other games</b></p>
+<ul>
+<li>Rainbow 6 Siege</li>
+<li>Dota 2</li>
+<li>HearthStone</li>
+<li>SuperSmash</li>
+<li>SIM Racing</li>
+<li>Fighter Games</li>
+    </ul>
+    <p>The tryouts for all these games happen at the beginning of each semester if enough people show up for the game</p>
+	<style>
+		body {
+			background-color: #ffffff;
+			color: #333333;
+			font-family: Arial, sans-serif;
+		}
+	header {
+		background-color: #eb3434;
+		color: #ffffff;
+		padding: 20px;
+	}
+
+	nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav li {
+		display: inline-block;
+		margin-right: 20px;
+	}
+
+	nav a {
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+	nav a:hover {
+		color: #333333;
+	}
+
+	main {
+		padding: 20px;
+	}
+
+	section {
+		margin-bottom: 20px;
+	}
+
+	h1, h2, h3 {
+		font-weight: normal;
+		margin: 0 0 10px 0;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	
+
+	a {
+		color: #eb3434;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+</style>
+</head>
+<body>
+	<!-- your HTML content here -->
+</body>
+</html>

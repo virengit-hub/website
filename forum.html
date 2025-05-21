@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <script>
+		function search() {
+			var input, filter, ul, li, a, i, txtValue;
+			input = document.getElementById("searchBar");
+			filter = input.value.toUpperCase();
+			ul = document.getElementById("navList");
+			li = ul.getElementsByTagName("li");
+			for (i = 0; i < li.length; i++) {
+				a = li[i].getElementsByTagName("a")[0];
+				txtValue = a.textContent || a.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					li[i].style.display = "";
+				} else {
+					li[i].style.display = "none";
+				}
+			}
+		}
+	</script>
+    <link rel="stylesheet" href="styles.css">
+	<title>Ferris State E-Sports Forum</title>
+	<link rel="stylesheet" type="text/css" href="forum.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul id="navList">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="caster.html">Caster</a></li>
+				<li><a href="facility.html">Facility</a></li>
+				<li><a href="discord.html">Discord</a></li>
+				<li><a href="building.html">Upcoming Building</a></li>
+                <li><a href="sponsorship%20and%20advertising.html">Sponsorships and Advertising</a></li>
+                <li><a href="playerprofile.html">Player Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="forum.html">Forums</a></li>
+                <li><a href="policy%20page.html">Policy</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact%20page.html">Contact Us</a></li>
+                <li><a href="main.html">About Us</a></li>
+					<a href="#">Games &#9662;</a>
+                <li>
+					<ul>
+						<div><li><a href="codpage.html">Call of Duty</a></li></div>
+						<div><li><a href="CSGOPAGE.html">CS:GO</a></li></div>
+						<div><li><a href="LEAGUEOFLEGENDSPAGE.html">League of Legends</a></li></div>
+						<div><li><a href="OVERWATCH2PAGE.html">Overwatch</a></li></div>
+						<div><li><a href="ROCKETLEAGUEPAGE.HTML">Rocket League</a></li></div>
+						<div><li><a href="VALORANTPAGE.html">Valorant</a></li></div>
+						<div><li><a href="MOREGAMESPAGE.html">More Games</a></li></div>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<h1>Ferris State E-Sports Forum</h1>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="discussion">
+				<h2>General Discussion</h2>
+				<div class="post">
+					<h3>Post title</h3>
+					<p>The customer is very important, the customer will be followed by the customer. Mauris volutpat purus that free sad result. As fear is not before expected ends. He is said to have lived in this street. But there is always excitement, and sadness is the very place of life. Aenean did not need to fear the pain of the vestibule. Every weekend, except that fear is convenient, that flatters the biggest player.</p>
+					<p class="author">Posted by John Doe on January 1, 2023</p>
+				</div>
+				<div class="post">
+					<h3>Post title</h3>
+					<p>The customer is very important, the customer will be followed by the customer. Mauris volutpat purus that free sad result. As fear is not before expected ends. He is said to have lived in this street. But there is always excitement, and sadness is the very place of life. Aenean did not need to fear the pain of the vestibule. Every weekend, except that fear is convenient, that flatters the biggest player.</p>
+					<p class="author">Posted by Jane Doe on January 2, 2023</p>
+				</div>
+			</div>
+			<div class="new-post">
+				<h2>New Post</h2>
+				<form>
+					<label for="post-title">Title</label>
+					<input type="text" id="post-title" name="post-title" required>
+					<label for="post-content">Content</label>
+					<textarea id="post-content" name="post-content" required></textarea>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Ferris State E-Sports</p>
+	</footer>
+    <script src="assets.js/forum.js"></script>
+</body>
+</html>

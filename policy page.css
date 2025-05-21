@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+h1, h2 {
+  color: rgb(235, 52, 52);
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: rgb(252, 186, 3);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

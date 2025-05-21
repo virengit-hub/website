@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+		function search() {
+			var input, filter, ul, li, a, i, txtValue;
+			input = document.getElementById("searchBar");
+			filter = input.value.toUpperCase();
+			ul = document.getElementById("navList");
+			li = ul.getElementsByTagName("li");
+			for (i = 0; i < li.length; i++) {
+				a = li[i].getElementsByTagName("a")[0];
+				txtValue = a.textContent || a.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					li[i].style.display = "";
+				} else {
+					li[i].style.display = "none";
+				}
+			}
+		}
+	</script>
+    <link rel="stylesheet" href="styles.css">
+	<title>Sponsorship & Advertising - Ferris State E-Sports</title>
+	<link rel="stylesheet" type="text/css" href="sponsorship%20and%20advertising.css">
+	<script src="assets.js/playerprofile.js"></script>
+</head>
+<body>
+	<div class="container">
+        <header>
+		<h1>Ferris State E-Sports</h1>
+		<h2 style="text-align: center;">Sponsorship and Advertising</h2>
+        <nav>
+			<ul id="navList">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="caster.html">Caster</a></li>
+				<li><a href="facility.html">Facility</a></li>
+				<li><a href="discord.html">Discord</a></li>
+				<li><a href="building.html">Upcoming Building</a></li>
+                <li><a href="sponsorship%20and%20advertising.html">Sponsorships and Advertising</a></li>
+                <li><a href="playerprofile.html">Player Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="forum.html">Forums</a></li>
+                <li><a href="policy%20page.html">Policy</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact%20page.html">Contact Us</a></li>
+                <li><a href="main.html">About Us</a></li>
+					<a href="#">Games &#9662;</a>
+                <li>
+					<ul>
+						<div><li><a href="codpage.html">Call of Duty</a></li></div>
+						<div><li><a href="CSGOPAGE.html">CS:GO</a></li></div>
+						<div><li><a href="LEAGUEOFLEGENDSPAGE.html">League of Legends</a></li></div>
+						<div><li><a href="OVERWATCH2PAGE.html">Overwatch</a></li></div>
+						<div><li><a href="ROCKETLEAGUEPAGE.HTML">Rocket League</a></li></div>
+						<div><li><a href="VALORANTPAGE.html">Valorant</a></li></div>
+						<div><li><a href="MOREGAMESPAGE.html">More Games</a></li></div>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	
+	</header>
+	<div class="container">
+		<h2>Sponsorship & Advertising Opportunities</h2>
+		<p>Ferris State E-Sports offers a variety of opportunities for businesses and organizations to sponsor and advertise with us. Whether you are looking to promote your brand or product to our dedicated fanbase, or support the growth of e-sports as a whole, we have options that will fit your needs and budget.</p>
+		<h3>Sponsorship Packages</h3>
+		<p>Our sponsorship packages offer a range of benefits to our sponsors, including:</p>
+		<ul>
+			<li>Logo placement on our website and social media pages</li>
+			<li>Recognition in our live streams and video content</li>
+			<li>Opportunities for product giveaways and promotions</li>
+			<li>Access to our players and coaches for promotional events</li>
+		</ul>
+		<p>For more information on our sponsorship packages, please contact us at <a href="mailto:sponsorship@ferrisstateesports.com">sponsorship@ferrisstateesports.com</a>.</p>
+		<h3>Advertising Opportunities</h3>
+		<p>We offer a variety of advertising opportunities, including:</p>
+		<ul>
+			<li>Ad placements on our website and social media pages</li>
+			<li>Sponsored posts on our social media pages</li>
+			<li>Product placement in our live streams and video content</li>
+		</ul>
+		<p>For more information on our advertising opportunities, please contact us at <a href="mailto:advertising@ferrisstateesports.com">advertising@ferrisstateesports.com</a>.</p>
+	</div>
+	<footer>
+		<p>&copy; 2023 Ferris State E-Sports</p>
+	</footer>
+	<script src="assets.js/sponsorship and advertising.js"></script>
+</body>
+</html>
+

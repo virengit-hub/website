@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+		function search() {
+			var input, filter, ul, li, a, i, txtValue;
+			input = document.getElementById("searchBar");
+			filter = input.value.toUpperCase();
+			ul = document.getElementById("navList");
+			li = ul.getElementsByTagName("li");
+			for (i = 0; i < li.length; i++) {
+				a = li[i].getElementsByTagName("a")[0];
+				txtValue = a.textContent || a.innerText;
+				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					li[i].style.display = "";
+				} else {
+					li[i].style.display = "none";
+				}
+			}
+		}
+	</script>
+	<link rel="stylesheet" href="styles.css">
+	<title>Ferris State E-Sports - Player Profiles</title>
+	<link rel="stylesheet" type="text/css" href="playerprofile.css">
+	<script src="assets.js/playerprofile.js"></script>
+</head>
+<body>
+	<div class="container">
+        <header>
+		<h1>Ferris State E-Sports</h1>
+		<h2 style="text-align: center;">Player Profiles</h2>
+        <nav>
+			<ul id="navList">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="caster.html">Caster</a></li>
+				<li><a href="facility.html">Facility</a></li>
+				<li><a href="discord.html">Discord</a></li>
+				<li><a href="building.html">Upcoming Building</a></li>
+                <li><a href="sponsorship%20and%20advertising.html">Sponsorships and Advertising</a></li>
+                <li><a href="playerprofile.html">Player Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="forum.html">Forums</a></li>
+                <li><a href="policy%20page.html">Policy</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact%20page.html">Contact Us</a></li>
+                <li><a href="main.html">About Us</a></li>
+					<a href="#">Games &#9662;</a>
+                <li>
+					<ul>
+						<div><li><a href="codpage.html">Call of Duty</a></li></div>
+						<div><li><a href="CSGOPAGE.html">CS:GO</a></li></div>
+						<div><li><a href="LEAGUEOFLEGENDSPAGE.html">League of Legends</a></li></div>
+						<div><li><a href="OVERWATCH2PAGE.html">Overwatch</a></li></div>
+						<div><li><a href="ROCKETLEAGUEPAGE.HTML">Rocket League</a></li></div>
+						<div><li><a href="VALORANTPAGE.html">Valorant</a></li></div>
+						<div><li><a href="MOREGAMESPAGE.html">More Games</a></li></div>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+        </header>
+		 <!-- The Trunk -->
+		<div class="profile">
+			<img class="image" src="the_trunk.jpg" alt="The Trunk">
+			<h2>The Trunk</h2>
+			<p class="title">4X Annual E-sports championship winner</p>
+			<p>5X Champions League winner, 2X LaLiga </p>
+		</div>
+		
+		<!-- Midfieldmaestro -->
+		<div class="profile">
+			<img class="image" src="midfieldmaestro.jpg" alt="Midfieldmaestro">
+			<h2>Midfieldmaestro</h2>
+			<p class="title">A Monaco based youtuber.</p>
+			<p>2X Champions League winner, 2X LaLiga winner</p>
+		</div>
+		
+		<!-- Trek -->
+		<div class="profile">
+			<img class="image" src="trek.jpg" alt="Trek">
+			<h2>Trek</h2>
+			<p class="title">The veteran as they call him. He was a menace back in the halo days.</p>
+			<p>5 FA Cups, 13 Premier League titles and 2 Champions League titles to his name</p>
+		</div>
+		<!-- Senn -->
+		<div class="profile">
+			<img class="image" src="senn.jpg" alt="Senn">
+			<h2>Senn</h2>
+			<p class="title">A Cape Town based youngster with a flair of becoming one of the all time greats!</p>
+			<p>2021 AFCON winner</p>
+		</div>
+	</div>
+	<footer>
+		<p>&copy; 2023 Ferris State E-Sports</p>
+</body>
+</html>
+
